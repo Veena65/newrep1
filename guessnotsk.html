@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let rand=Math.floor(Math.random()*100);
+            count=0;
+            while(true)
+            {
+                let number=prompt("Guess a number between 0 to 100");
+                count++;
+                if(number==rand)
+                {
+                    alert("Your guess is correct.Guess count is "+count);
+                    break;
+                }
+                if(number>rand)
+                {alert("Guess is too high");}
+                else if(number<rand)
+                {
+                    alert("Guess is too low");
+                }
+
+            }
+        </script>
+    </body>
+</html>
